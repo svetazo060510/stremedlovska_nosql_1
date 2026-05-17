@@ -43,7 +43,7 @@ python scripts/01_load_data.py
 
 1.3. Трансформуємо:
 ```bash
-mongosh "mongodb+srv://user:password@cluster0.mongodb.net/" --file scripts/02_transform_data.js
+mongosh "mongodb+srv://user:password@cluster0.mongodb.net/" --file scripts/02_transform.js
 ```
 
 2. **Виконання базових запитів:**
