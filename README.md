@@ -13,10 +13,8 @@ source venv/bin/activate
 
 # Встановлення Python-залежностей для ETL-скрипту
 pip install -r requirements.txt
-
-# Встановлення NodeJS залежностей для аналітичних скриптів
-npm install
 ```
+
 ---
 
 ### Крок 2. Конфігурація файлу `.env`
@@ -27,6 +25,8 @@ npm install
 MONGO_URI=mongodb+srv://user:password@cluster.mongodb.net/
 
 ```
+
+---
 
 ### Крок 3. Порядок запуску скриптів
 
@@ -48,7 +48,7 @@ mongosh "mongodb+srv://user:password@cluster0.mongodb.net/" --file queries/part3
 
 ```
 
-4. **Запуск тестів індексації та оптимізації (Частина 4):**
+4. **Запуск тестів індексації та оптимізації:**
 ```bash
 mongosh "mongodb+srv://user:password@cluster0.mongodb.net/" --file queries/part4_indexes.js
 
